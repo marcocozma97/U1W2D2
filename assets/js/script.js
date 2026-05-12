@@ -65,7 +65,7 @@ console.log(`${utente.indirizzo.cap}`)
 
 const myKey = 'nome';
 
-console.log(persona [myKey]);
+console.log(persona[myKey]);
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
@@ -113,6 +113,21 @@ if (totale >= 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const elements = [
+    42,
+    "ciao",
+    true,
+];
+
+console.log(elements);
+
+for (i=0; i < elements.length; i++)
+if (typeof elements[i] === "number") {
+    console.log(`${elements[i]} è un numero.`);
+} else {
+    console.log(`${elements[i]} non è un numero.`);
+};
 
 
 /* ESERCIZIO 8 — Array dei numeri
