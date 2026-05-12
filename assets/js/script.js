@@ -30,6 +30,11 @@ console.log(persona);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+persona.email = 'marco@mail.com';
+
+delete persona.eta;
+
+console.log(persona);
 
 /* ESERCIZIO 3 — Oggetto annidato
    Oggetto "utente" con una proprietà "indirizzo" (oggetto con via, citta, cap).
