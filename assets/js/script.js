@@ -112,16 +112,16 @@ if (totale >= 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const elements = [42,'ciao',true,];
+const elements = [42, 'ciao', true,];
 
 console.log(elements);
 
-for (i=0; i < elements.length; i++)
-if (typeof elements[i] === 'number') {
-    console.log(`${elements[i]} è un numero.`);
-} else {
-    console.log(`${elements[i]} non è un numero.`);
-};
+for (i = 0; i < elements.length; i++)
+    if (typeof elements[i] === 'number') {
+        console.log(`${elements[i]} è un numero.`);
+    } else {
+        console.log(`${elements[i]} non è un numero.`);
+    };
 
 
 /* ESERCIZIO 8 — Array dei numeri
@@ -133,7 +133,7 @@ if (typeof elements[i] === 'number') {
 
 const myNumbers = [];
 
-myNumbers.push(1,2,3,4,5);
+myNumbers.push(1, 2, 3, 4, 5);
 myNumbers.unshift(0);
 
 console.log(myNumbers, myNumbers.lenght);
@@ -146,16 +146,11 @@ console.log(myNumbers, myNumbers.lenght);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const carrelloScuola = [
-    "Penna",
-    "Quaderno",
-    "Zaino",
-    "Astuccio",
-];
+const carrelloScuola = ['Penna', 'Quaderno', 'Zaino', 'Astuccio'];
 
 console.log(carrelloScuola);
 
-carrelloScuola.splice(1,1,"Diario");
+carrelloScuola.splice(1, 1, 'Diario');
 
 console.log(carrelloScuola);
 
@@ -170,12 +165,14 @@ console.log(carrelloScuola);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const prodotti = [
-    "Penna",
-    "Quaderno",
-    "Zaino",
-];
-
+const prodotti = ['Penna', 'Quaderno', 'Zaino'];
+let cercato = 'Zaino';
+if (prodotti.includes(cercato)) {
+    console.log(`${cercato} è nel carrello: ${prodotti.includes(cercato)}`);
+    console.log(`${cercato} è in posizione ${prodotti.indexOf(cercato)}`);
+} else {
+    console.log(`${cercato} non è nel carrello.`)
+}
 
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
@@ -185,6 +182,25 @@ const prodotti = [
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const utenti = [
+    {
+    nome: 'Marco',
+    eta: 28
+    },
+     {
+    nome: 'Giovanni',
+    eta: 22
+    },
+     {
+    nome: 'Luca',
+    eta: 34
+    },
+]
+
+for (let i = 0; i < utenti.length; i++) {
+	console.log(`${utenti[i].nome} (${utenti[i].eta} anni)`);
+}
+console.table(utenti);
 
 /* ESERCIZIO 12 — Inventario disponibili
    Array prodotti di 4 oggetti { nome, prezzo, disponibile }.
@@ -196,6 +212,38 @@ const prodotti = [
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const products = [
+    {
+        nome: 'tastiera',
+        prezzo: 30,
+        disponibile: true
+    },
+    {
+        nome: 'mouse',
+        prezzo: 10,
+        disponibile: false
+    },
+    {
+        nome: 'monitor',
+        prezzo: 120,
+        disponibile: true
+    },
+    {
+        nome: 'stampante',
+        prezzo: 80,
+        disponibile: false
+    },
+]
+
+for (let i=0; i < products.length; i++) {
+    if(orducts[i].disponibile && products[i].prezzo < 50) {
+        console.log(`OFFERTA: ${products[i].nome} - ${products[i].prezzo}€`);
+    } else if (products[i].disponibile && products[i].prezzo >= 50) {
+        console.log(`${products[i].nome} - ${products[i].prezzo}€`);
+    } else (!products[i].disponibile) {
+        console.log((`${products[i].nome} esaurito`));
+    }
+}
 
 /* --EXTRA-- ESERCIZIO 13 — Reverse manuale
    Array [1, 2, 3, 4, 5].
@@ -205,3 +253,13 @@ const prodotti = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const myNumbersDue = [1, 2, 3, 4, 5];
+
+const inverso = [];
+
+for (let i = myNumbersDue.length; i >= 1; i--) {
+    inverso.push(myNumbersDue[i - 1]);
+}
+
+console.log(inverso);
