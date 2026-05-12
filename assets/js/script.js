@@ -137,6 +137,14 @@ if (typeof elements[i] === "number") {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const myNumbers = [];
+
+myNumbers.push (1,2,3,4,5);
+myNumbers.unshift(0);
+
+console.log(myNumbers);
+
+console.log(myNumbers.lenght);
 
 /* ESERCIZIO 9 — Carrello con splice
    Array ["Penna", "Quaderno", "Zaino", "Astuccio"].
@@ -162,3 +170,4 @@ if (typeof elements[i] === "number") {
    Con un for, stampa ogni utente: "Mario (25 anni)".
    Aggiungi console.table(utenti) alla fine.
 */
+
