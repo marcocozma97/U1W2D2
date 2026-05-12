@@ -74,6 +74,19 @@ console.log(persona [myKey]);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let a = 12;
+let b = 15;
+let c = 8;
+
+if (a > b && a > c) {
+    console.log(`a è il numero più grande`);
+} else if (b > a && b > c) {
+    console.log(`b è il numero più grande`);
+} else if (c > a && c > b) {
+    console.log(`c è il numero più grande`);
+} else if (a === b || a === c || b === c) {
+    console.log(`Pareggio`)
+}
 
 /* ESERCIZIO 6 — E-commerce: spedizione
    Variabile "totale".
