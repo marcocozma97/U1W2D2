@@ -43,6 +43,18 @@ console.log(persona);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const utente = {
+    nome: 'Marco',
+    cognome: 'Cozma',
+    eta: 28,
+    indirizzo: {
+        via: 'Giuseppe, 11',
+        citta: 'Roma',
+        cap: '00155',
+    }
+};
+
+console.log(`${utente.indirizzo.cap}`)
 
 /* ESERCIZIO 4 — Bracket dinamica
    Sull'oggetto "persona", variabile chiave = "nome".
