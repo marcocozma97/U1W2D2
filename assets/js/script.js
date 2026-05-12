@@ -154,6 +154,20 @@ console.log(myNumbers.lenght);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const carrelloScuola = [
+    "Penna",
+    "Quaderno",
+    "Zaino",
+    "Astuccio",
+];
+
+console.log(carrelloScuola);
+
+carrelloScuola.splice(1,1,"Diario");
+
+console.log(carrelloScuola);
+
+
 
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ["Penna", "Quaderno", "Zaino"].
