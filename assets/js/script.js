@@ -14,6 +14,14 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const persona = {
+    nome: 'Marco',
+    cognome: 'Cozma',
+    eta: 28,
+    citta: 'Roma',
+};
+
+console.log(persona);
 
 /* ESERCIZIO 2 — Aggiungi e rimuovi
    Sull'oggetto "persona": aggiungi "email", poi rimuovi "eta".
