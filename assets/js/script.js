@@ -63,6 +63,9 @@ console.log(`${utente.indirizzo.cap}`)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const myKey = 'nome';
+
+console.log(persona [myKey]);
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
