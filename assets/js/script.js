@@ -185,3 +185,25 @@ console.log(carrelloScuola);
    Aggiungi console.table(utenti) alla fine.
 */
 
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+/* ESERCIZIO 12 — Inventario disponibili
+   Array prodotti di 4 oggetti { nome, prezzo, disponibile }.
+   Con for, per ogni prodotto:
+   - disponibile && prezzo < 10 → "OFFERTA: nome (prezzo€)"
+   - disponibile && prezzo >= 10 → "nome — prezzo€"
+   - !disponibile → "nome — esaurito"
+*/
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+/* --EXTRA-- ESERCIZIO 13 — Reverse manuale
+   Array [1, 2, 3, 4, 5].
+   Nuovo array "inverso", riempilo con un for (dall'ultimo al primo) usando push.
+   Stampa "inverso".
+   Vincolo: niente metodo .reverse() di JavaScript.
+*/
+
+/* SCRIVI QUI LA TUA RISPOSTA */
