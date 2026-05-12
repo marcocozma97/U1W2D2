@@ -96,12 +96,12 @@ if (a > b && a > c) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let totale = 35;
-let totaleFinale = totale + 9.90;
+let spedizione = 9.90;
 
 if (totale >= 50) {
     console.log(`Totale carrelo: ${totale}€ - Spedizione: Gratuita - Totale finale: ${totale}€`);
 } else {
-    console.log(`Totale carrelo: ${totale}€ - Spedizione: 9.90€ - Totale finale: ${totaleFinale}€`);
+    console.log(`Totale carrelo: ${totale}€ - Spedizione:${spedizione}€ - Totale finale: ${totale + spedizione}€`);
 };
 
 
@@ -112,16 +112,12 @@ if (totale >= 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const elements = [
-    42,
-    "ciao",
-    true,
-];
+const elements = [42,'ciao',true,];
 
 console.log(elements);
 
 for (i=0; i < elements.length; i++)
-if (typeof elements[i] === "number") {
+if (typeof elements[i] === 'number') {
     console.log(`${elements[i]} è un numero.`);
 } else {
     console.log(`${elements[i]} non è un numero.`);
@@ -137,12 +133,10 @@ if (typeof elements[i] === "number") {
 
 const myNumbers = [];
 
-myNumbers.push (1,2,3,4,5);
+myNumbers.push(1,2,3,4,5);
 myNumbers.unshift(0);
 
-console.log(myNumbers);
-
-console.log(myNumbers.lenght);
+console.log(myNumbers, myNumbers.lenght);
 
 /* ESERCIZIO 9 — Carrello con splice
    Array ["Penna", "Quaderno", "Zaino", "Astuccio"].
