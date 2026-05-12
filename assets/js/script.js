@@ -21,7 +21,7 @@ const persona = {
     citta: 'Roma',
 };
 
-console.log(persona);
+console.log(`${persona.nome} ${persona.cognome}, ${persona.eta} anni, vive a ${persona.citta}`);
 
 /* ESERCIZIO 2 — Aggiungi e rimuovi
    Sull'oggetto "persona": aggiungi "email", poi rimuovi "eta".
@@ -44,17 +44,15 @@ console.log(persona);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const utente = {
-    nome: 'Marco',
-    cognome: 'Cozma',
-    eta: 28,
+
     indirizzo: {
         via: 'Giuseppe, 11',
         citta: 'Roma',
         cap: '00155',
     }
-};
+}
 
-console.log(`${utente.indirizzo.cap}`)
+console.log(utente.indirizzo.cap);
 
 /* ESERCIZIO 4 — Bracket dinamica
    Sull'oggetto "persona", variabile chiave = "nome".
@@ -63,9 +61,9 @@ console.log(`${utente.indirizzo.cap}`)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const myKey = 'nome';
+let chiave = 'nome';
 
-console.log(persona[myKey]);
+console.log(persona[chiave]);
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
@@ -84,7 +82,7 @@ if (a > b && a > c) {
     console.log(`b è il numero più grande`);
 } else if (c > a && c > b) {
     console.log(`c è il numero più grande`);
-} else if (a === b || a === c || b === c) {
+} else {
     console.log(`Pareggio`)
 }
 
@@ -177,6 +175,12 @@ console.log(carrelloScuola);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const prodotti = [
+    "Penna",
+    "Quaderno",
+    "Zaino",
+];
 
 
 /* ESERCIZIO 11 — Lista utenti
